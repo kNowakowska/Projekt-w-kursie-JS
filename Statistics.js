@@ -15,4 +15,3 @@ class Statistics{
     }
 
 }
-const stac = new Statistics();
