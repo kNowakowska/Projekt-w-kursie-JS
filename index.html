@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt w kursie JS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .wrap{
+            width:100%;
+            height:1vh;
+            padding: 30px 20px;
+            text-align: center;
+            
+        }
+        h1{
+            text-transform: uppercase;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:darkred;
+            font-size:40px;
+            text-align: center;
+        }
+        .field{
+            width: 25%;
+            margin: 10px;
+            background-color: black;
+            display: inline-block;
+            height: 200px;
+            border: 3px solid black;
+        }
+        form{
+            text-align: center;
+            margin:10px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+        }
+        input{
+            border: 3px solid black;
+            width:30vw;
+            height:80px;
+            display: inline-block;
+            text-align: center;
+            font-size:30px;
+            text-transform: uppercase;
+
+        }
+        button{
+            width:30vw;
+            height:80px;
+            display:inline-block;
+            font-size:30px;
+            background-color: #3D3938;
+            color:white;
+            text-transform: uppercase;
+        }
+        .money, .statistics{
+            margin: 30px auto;
+            color:black;
+            font-size:20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .statistics{
+            font-weight: normal;
+        }
+        .statistics:first-child{
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <div class="wrap">
+        <h1>Jednoręki bandyta</h1>
+        <section class="game">
+            <div class="field" id="1"></div>
+            <div class="field" id="2"></div>
+            <div class="field" id="3"></div>
+        </section>
+        
+        <form>
+            <input type="number" placeholder="Podaj stawkę">
+            <button type="submit">Zakręć!</button>
+        </form>
+        <div class="money">twoje środki przed kolejną grą to: <span class="wallet">0</span>$.</div>
+        <div class="statistics"> <span class="result"></span> Za tobą <span class="total">0</span> gier, w tym <span class="win">0</span> wygranych i <span class="loss">0</span>przegranych.</div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
